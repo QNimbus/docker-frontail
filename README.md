@@ -2,6 +2,10 @@
 
 Docker image (~64MB) for [frontail](https://github.com/QNimbus/docker-frontail).
 
+## Description
+
+Frontail app with command line utility [wait-for](https://github.com/QNimbus/wait-for) installed to optionally delay the start of Frontail until another service/container becomes available
+
 ## Build
 
 ```

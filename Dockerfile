@@ -4,7 +4,9 @@ RUN apk update && apk upgrade && apk add --no-cache git
 
 RUN npm install frontail@4.2.0 --global
 
-ADD frontail-preset.json /
+ADD wait-for.sh frontail-preset.json /
+
+RUN chmod +x /wait-for.sh
 
 VOLUME /log
 ENTRYPOINT ["frontail"]
